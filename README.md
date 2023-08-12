@@ -15,3 +15,53 @@ If our work is valuable to you, please cite our work:
   publisher={IEEE}
 }
 ```
+
+#### Requirements
+
+If you've ever tried our previous palmprint recognition method [CO3Net](https://github.com/Zi-YuanYang/CO3Net), you can skip this step, you don't need to install any additional packages.
+
+Our codes were implemented by ```PyTorch 1.10``` and ```11.3``` CUDA version. If you wanna try our method, please first install necessary packages as follows:
+
+```
+pip install requirements.txt
+```
+
+#### Data Preprocessing
+To help readers to reproduce our method, we also release our training and testing lists (including PolyU, Tongji, IITD, Multi-Spectrum datasets). If you wanna try our method in other datasets, you need to generate training and testing texts as follows:
+
+```
+python ./data/genText.py
+```
+
+#### Training
+After you prepare the training and testing texts, then you can directly run our training code as follows:
+
+```
+python train.py --id_num xxxx --train_set_file xxxx --test_set_file xxxx --des_path xxxx --path_rst xxxx
+```
+
+* batch_size: the size of batch to be used for local training. (default: ```1024```)
+* epoch_num: the number of total training epoches. (default: ```3000```)
+* temp: the value of the tempture in our contrastive loss. (default: ```0.07```)
+* weight1: the weight of cross-entropy loss. (default: ```0.8```)
+* weight2: the weight of contrastive loss. (default: ```0.2```)
+* id_num: the number of ids in the dataset.
+* gpu_id: the id of training gpu.
+* lr: the inital learning rate. (default: ```0.001```)
+* redstep: the step size of learning scheduler. (default: ```500```)
+* test_interval: the interval of testing.
+* save_interval: the interval of saving.
+* train_set_file: the path of training text file.
+* test_set_file: the path of testing text file.
+* des_path: the path of saving checkpoints.
+* path_rst: the path of saving results.
+
+#### Acknowledgments
+Thanks to my all cooperators, they contributed so much to this work.
+
+#### Contact
+If you have any question or suggestion to our work, please feel free to contact me. My email is cziyuanyang@gmail.com.
+
+#### Reference
+We refer to the following repositories:
+* https://github.com/Zi-YuanYang/CO3Net
