@@ -21,6 +21,9 @@ author={Yang, Ziyuan and Huangfu, Huijie and Leng, Lu and Zhang, Bob and Teoh, A
 ```
 
 #### Requirements
+
+If you have already tried our previous work [CO3Net](https://github.com/Zi-YuanYang/CO3Net), you can skip this step.
+
 Our codes were implemented by ```PyTorch 1.10``` and ```11.3``` CUDA version. If you wanna try our method, please first install necessary packages as follows:
 
 ```
@@ -46,6 +49,7 @@ python train.py --id_num xxxx --train_set_file xxxx --test_set_file xxxx --des_p
 * temp: the value of the tempture in our contrastive loss. (default: ```0.07```)
 * weight1: the weight of cross-entropy loss. (default: ```0.8```)
 * weight2: the weight of contrastive loss. (default: ```0.2```)
+* com_weight: the weight of the traditional competition mechanism. (default: ```0.8```)
 * id_num: the number of ids in the dataset.
 * gpu_id: the id of training gpu.
 * lr: the inital learning rate. (default: ```0.001```)
@@ -65,5 +69,4 @@ If you have any question or suggestion to our work, please feel free to contact 
 
 #### Reference
 We refer to the following repositories:
-* https://github.com/JonnyLewis/compnet
-* https://github.com/houqb/CoordAttention
+* https://github.com/Zi-YuanYang/CO3Net
