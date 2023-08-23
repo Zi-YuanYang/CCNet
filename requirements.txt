@@ -1,0 +1,9 @@
+scipy
+matplotlib
+visdom
+torchsummary
+tensorboardX
+opencv-python-headless
+opencv-contrib-python-headless
+scikit-learn
+h5py
