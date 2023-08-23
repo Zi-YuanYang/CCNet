@@ -1,21 +1,23 @@
-# CO3Net: Coordinate-Aware Contrastive Competitive Neural Network for Palmprint Recognition
+# Comprehensive Competition Mechanism in Palmprint Recognition
 
-This repository is a PyTorch implementation of CO3Net (accepted by IEEE Transactions on Instrumentation and Measurement). This paper can be downloaded at [this link](https://ieeexplore.ieee.org/document/10124928).
+This repository is a PyTorch implementation of CCNet (accepted by IEEE Transactions on Information Forensics and Security). This paper can be downloaded at [this link](https://ieeexplore.ieee.org/document/10223233).
 
 #### Abstract
-Palmprint recognition achieves high discrimination for identity verification. Compared with handcrafted local texture descriptors, convolutional neural networks (CNNs) can spontaneously learn optimal discriminative features without any prior knowledge. To further enhance the features' representation and discrimination, we propose a coordinate-aware contrastive competitive neural network (CO$_3$Net) for palmprint recognition. To extract the multi-scale textures, CO$_3$Net consists of three parallel learnable Gabor filters (LGF)-based texture extraction branches that learn the discriminative and robust ordering features. Due to the heterogeneity of palmprints, the effects of different textures on the final recognition performance are inconsistent, and dynamically focusing on the textures is beneficial to the performance improvement. Then, CO$_3$Net introduces the attention modules to explore the spatial information, and selects more robust and discriminative textures. Specifically, coordinate attention is embedded into CO$_3$Net to adaptively focus on the important textures from the positional information. Since it is difficult for the cross-entropy loss to build a compact intra-class and separate inter-class feature space, the contrastive loss is employed to jointly optimize the network. CO$_3$Net is validated on four public datasets, and the results demonstrate the remarkable recognition performance of the proposed CO$_3$Net compared to other state-of-the-art methods.
+Palmprint has gained popularity as a biometric modality and has recently attracted significant research interest. The competition-based method is the prevailing approach for hand-crafted palmprint recognition, thanks to its powerful discriminative ability to identify distinctive features. However, the competition mechanism possesses vast untapped advantages that have yet to be fully explored. In this paper, we reformulate the traditional competition mechanism and propose a Comprehensive Competition Network (CCNet). The traditional competition mechanism focuses solely on selecting the winner of different channels without considering the spatial information of the features. Our approach considers the spatial competition relationships between features while utilizing channel competition features to extract a more comprehensive set of competitive features. Moreover, existing methods for palmprint recognition typically focus on first-order texture features without utilizing the higher-order texture feature information. Our approach integrates the competition process with multi-order texture features to overcome this limitation. CCNet incorporates spatial and channel competition mechanisms into multi-order texture features to enhance recognition accuracy, enabling it to capture and utilize palmprint information in an end-to-end manner efficiently. Extensive experimental results have shown that CCNet can achieve remarkable performance on four public datasets, showing that CCNet is a promising approach for palmprint recognition that can achieve state-of-the-art performance. Related codes will be released at https://github.com/Zi-YuanYang/CCNet.
 
 
 #### Citation
 If our work is valuable to you, please cite our work:
 ```
-@article{yang2022mtcc,
-  title={CO3Net: Coordinate-Aware Contrastive Competitive Neural Network for Palmprint Recognition},
-  author={Yang, Ziyuan and Xia, Wenjun and Qiao, Yifan and Lu, Zexin and Zhang, Bob and Leng, Lu and Zhang, Yi},
-  journal={IEEE Transactions on Instrumentation and Measurement},
+@article{yang2023ccnet,
+author={Yang, Ziyuan and Huangfu, Huijie and Leng, Lu and Zhang, Bob and Teoh, Andrew Beng Jin and Zhang, Yi},
+  journal={IEEE Transactions on Information Forensics and Security}, 
+  title={Comprehensive Competition Mechanism in Palmprint Recognition}, 
   year={2023},
-  publisher={IEEE}
-}
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TIFS.2023.3306104}}
 ```
 
 #### Requirements
