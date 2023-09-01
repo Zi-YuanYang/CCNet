@@ -9,14 +9,14 @@ Palmprint has gained popularity as a biometric modality and has recently attract
 #### Citation
 If our work is valuable to you, please cite our work:
 ```
-@article{yang2023ccnet,
-author={Yang, Ziyuan and Huangfu, Huijie and Leng, Lu and Zhang, Bob and Teoh, Andrew Beng Jin and Zhang, Yi},
+@ARTICLE{yang2023ccnet,
+  author={Yang, Ziyuan and Huangfu, Huijie and Leng, Lu and Zhang, Bob and Teoh, Andrew Beng Jin and Zhang, Yi},
   journal={IEEE Transactions on Information Forensics and Security}, 
   title={Comprehensive Competition Mechanism in Palmprint Recognition}, 
   year={2023},
-  volume={},
+  volume={18},
   number={},
-  pages={1-1},
+  pages={5160-5170},
   doi={10.1109/TIFS.2023.3306104}}
 ```
 
