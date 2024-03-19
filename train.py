@@ -383,7 +383,7 @@ if __name__== "__main__" :
         epoch_loss, epoch_accuracy = fit(epoch, net, data_loader_train, phase='training')
         # print('finish')
 
-        val_epoch_loss, val_epoch_accuracy = fit(epoch, net, data_loader_test, phase='testing')
+        val_epoch_loss, val_epoch_accuracy = fit(epoch, net, data_loader_train, phase='testing')
 
         scheduler.step()
 
