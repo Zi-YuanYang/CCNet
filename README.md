@@ -38,7 +38,7 @@ python ./data/genText.py
 ```
 
 #### Pretrained Model
-To help readers use our model, we release our pretrained models for [Tongji](https://drive.google.com/file/d/1Kj6Q1eCpkbCbfPVSqTZHGV9Y_H1uToEM/view?usp=drive_link) and [IITD](https://drive.google.com/file/d/17EBrjGVrzcyjETobQCYYhfR87nD2Z-l6/view?usp=drive_link). Because this method is designed in a close-set setting, we encourage the readers to train our method in your dataset. 
+To help readers use our model, we release our pretrained models for [Tongji](https://drive.google.com/file/d/1Kj6Q1eCpkbCbfPVSqTZHGV9Y_H1uToEM/view?usp=drive_link) and [IITD](https://drive.google.com/file/d/17EBrjGVrzcyjETobQCYYhfR87nD2Z-l6/view?usp=drive_link). Because this method is designed under a close-set setting, we encourage the readers to train our method in your dataset. 
 
 #### Training
 After you prepare the training and testing texts, then you can directly run our training code as follows:
