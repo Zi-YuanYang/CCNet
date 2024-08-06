@@ -96,17 +96,7 @@ data_loader_train = DataLoader(dataset=trainset, batch_size=batch_size, num_work
 data_loader_test = DataLoader(dataset=testset, batch_size=batch_size, num_workers=0, shuffle=False)
 
 net = ccnet(num_classes=num_classes,weight=args.weight_chan)
-
-source_net = compnet(num_classes=args.source_id_num,weight=args.weight_chan)
-source_net.load_state_dict(torch.load(args.check_point),strict=False)
-
-for key in source_net.state_dict().keys():
-    if 'arclayer' not in key:
-        net.state_dict()[key].data.copy_(source_net.state_dict()[key])
-        # print(key)
-# for key in net.state_dict():
-#     print(key)
-# print(net)
+net.load_state_dict(torch.load(args.check_point),strict=False)
 
 
 def test(model):
